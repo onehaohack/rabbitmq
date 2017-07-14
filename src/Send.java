@@ -8,7 +8,8 @@ public class Send {
 
   public static void main(String[] argv) throws Exception {
     ConnectionFactory factory = new ConnectionFactory();
-    factory.setHost("localhost");
+    factory.setHost("onehao.pw");
+    factory.setPort(5671);
     Connection connection = factory.newConnection();
     Channel channel = connection.createChannel();
 
